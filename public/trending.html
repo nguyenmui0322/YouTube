@@ -6,10 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="./assets/images/favicon1.ico" type="image/x-icon">
-  <title>YouTube</title>
+  <title>Trending</title>
   <!-- <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/trending.css">
+  <link rel="stylesheet" href="./assets/css/responsive.css">
 </head>
 
 <body class="body">
@@ -96,7 +97,7 @@
     <!-- left sidebar fixed -->
     <div class="sidebar" id="sideBar">
       <!-- main home explore btns -->
-      <div class="flex flex-col w-full mb-2">
+      <div class="flex w-full mb-2">
         <div class="flex items-center space-x-5 bg-sideBarHoverBg px-7 py-2.5 cursor-pointer">
           <i class="material-icons text-white md-21">home</i>
           <h2 class="text-sm font-semibold text-white">Home</h2>
@@ -374,43 +375,403 @@
           class="text-sm bg-pillsBg hover:bg-gray-700 py-1.5 px-3 rounded-full text-white border border-gray-700 transition duration-150">Java</a>
       </div>
 
-      <!-- videos container grid layout -->
-      <div class="videos-container" id="videos-container">
-        <!-- one video card -->
-        <div class="flex flex-col space-y-3 cursor-pointer">
+      <!-- videos container -->
+      <div class="videos-container flex flex-col space-y-6">
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
           <!-- thumbnail -->
-          <a href="#">
+          <a href="#" class="rounded-lg">
             <div class="relative h-52 sm:h-36 w-full">
-              <img class="relative h-full w-full object-cover" src="../public/assests/images/ganesh.jpg" alt="">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
               <span
                 class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
             </div>
           </a>
           <!-- video details -->
-          <div class="flex flex-col flex-auto space-y-1.5 mb-3">
-
-            <div class="flex items-center space-x-3">
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
               <!-- channel logo -->
-              <img class="w-12 h-12 rounded-full object-cover cursor-pointer" src="./assets/images/hero.png" alt="">
-              <div class="flex items-start">
-                <a href="#" class="text-sm text-bold text-white pr-1">Lorem ipsum dolor sit amet
-                  consectetur adipisicing.</a>
-                <i class="material-icons text-white md-21">more_vert</i>
-              </div>
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
             </div>
-
             <!-- channel link and meta data -->
-            <div class="flex flex-col pl-1 sm:pl-0 ml-14">
-              <a href="" class="text-gray-400 text-sm hover:text-white">Jhon Doe</a>
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
               <div class="flex space-x-1">
-                <span class="text-sm text-gray-400">74K views</span>
+                <span class="text-sm text-gray-400">100k views</span>
                 <span class="text-sm text-gray-400">• 1 month ago</span>
               </div>
             </div>
           </div>
         </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        <!-- video item -->
+        <div class="flex flex-auto space-y-3 cursor-pointer">
+          <!-- thumbnail -->
+          <a href="#" class="rounded-lg">
+            <div class="relative h-52 sm:h-36 w-full">
+              <img class="relative h-full w-full object-cover img_item" src="./assets/images/goku.jpg" alt="">
+              <span
+                class="absolute right-1 bottom-1 p-0.5 px-1 rounded-sm bg-black text-white text-xs bg-opacity-70">38:38</span>
+            </div>
+          </a>
+          <!-- video details -->
+          <div class="flex flex-col mx-2 item_detail">
+            <div class="space-x-3">
+              <!-- channel logo -->
+              <h1 class="text-2xl text-bold text-white pr-1">Songoku</h1>
+              <i class="material-icons text-white md-21"></i>
+            </div>
+            <!-- channel link and meta data -->
+            <div class="flex pl-1 sm:pl-0 ml-5 mt-1">
+              <a href="" class="text-gray-400 text-sm hover:text-white mr-2 item_author">Nguyễn Văn Mùi</a>
+              <div class="flex space-x-1">
+                <span class="text-sm text-gray-400">100k views</span>
+                <span class="text-sm text-gray-400">• 1 month ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End of video item -->
+        
       </div>
-
+      <!-- End of videos container -->
     </div>
   </div>
 
